@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+
+.square {
+    position: relative;
+    margin: 0 10px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 32% 58% 69% 43%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+
+.linkedin:hover span:nth-child(1) {
+    border: none;
+    background: #f07e6e;
+}
+
+.twitter:hover span:nth-child(1) {
+    border: none;
+    background: #84cdfa;
+}
+
+.github:hover span:nth-child(1) {
+    border: none;
+    background: #0e377d;
+}
+
+.square span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 38% 62% 63% 37%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.linkedin:hover span:nth-child(2) {
+    border: none;
+    background: #f07e6e;
+}
+
+.twitter:hover span:nth-child(2) {
+    border: none;
+    background: #84cdfa;
+}
+
+.github:hover span:nth-child(2) {
+    border: none;
+    background: #0e377d;
+}
+
+.square span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+}
+
+.linkedin:hover span:nth-child(3) {
+    border: none;
+    background: #f07e6e;
+}
+
+.twitter:hover span:nth-child(3) {
+    border: none;
+    background: #84cdfa;
+}
+
+.github:hover span:nth-child(3) {
+    border: none;
+    background: #0e377d;
+}
+
+.content {
+    position: relative;
+    padding: 40px 60px;
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.content a {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    padding: 6px 18px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+}
+
+.content a:hover {
+    background: white;
+    color: #333;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+    </style>
+</head>
+<body>
+    <html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Box box box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <div class="square linkedin">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+            <h2>
+                LinkedIn
+            </h2>
+            <p>This is my Linkedin Profile <br> check It Out</p>
+            <a href="www.linkedin.com/in/
+            gunjan-sontakke-a34b96187" target="_blank">GunjanS20</a>
+        </div>
+    </div>
+
+    <div class="square twitter">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+            <h2>
+                Twitter
+            </h2>
+            <p>This is where I read news and network with different social groups</p>
+            <a href="https://twitter.com/AdamDipinto" target="_blank">G20</a>
+        </div>
+    </div>
+
+    <div class="square github">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+            <h2>
+                Github
+            </h2>
+            <p>This is where I share code and work on projects</p>
+            <a href="https://github.com/gunjansontakke20" target="_blank">gunjansontakke20</a>
+        </div>
+    </div>
+</body>
+
+</html>
+</body>
+</html>
